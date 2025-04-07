@@ -1,0 +1,37 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Estacio",
+    "type": "object",
+    "properties": {
+      "date": {
+        "type": "string",
+        "format": "date-time"
+      },
+      "route_short_name": { "type": "string" },
+      "trip_headsign": { "type": "string" },
+      "stop_name": { "type": "string" },
+      "stop_id": { "type": "string" },
+      "arrival_time": { "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$" },
+      "departure_time": { "type": "string", "pattern": "^([01]\\d|2[0-3]):[0-5]\\d:[0-5]\\d$" },
+      "exception_type": { "type": "integer" },
+      "stop_sequence": { "type": "integer" },
+      "shape_id": { "type": "integer" },
+      "timepoint": { "type": "integer" },
+      "route_long_name": { "type": "string" },
+      "route_type": { "type": "integer" },
+      "route_url": { "type": "string", "format": "uri" },
+      "route_color": { "type": "string", "pattern": "^[0-9A-Fa-f]{6}$" },
+      "route_text_color": { "type": "string", "pattern": "^[0-9A-Fa-f]{6}$" },
+      "stop_lat": { "type": "number" },
+      "stop_lon": { "type": "number" },
+      "wheelchair_boarding": { "type": "integer" }
+    },
+    "required": [
+      "date", "route_short_name", "trip_headsign", "stop_name", "stop_id",
+      "arrival_time", "departure_time", "exception_type", "stop_sequence", "shape_id",
+      "timepoint", "route_long_name", "route_type", "route_url", "route_color",
+      "route_text_color", "stop_lat", "stop_lon", "wheelchair_boarding"
+    ],
+    "additionalProperties": false
+  }
+  

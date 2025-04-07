@@ -1,0 +1,113 @@
+/*CSS del titutlo donde pone la linea. (EJ: R6-Barcelona)*/
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding-top: 10px ;
+  padding-bottom: 10px;
+  color: white;
+  width: 500px;
+  font-weight: bold;
+  font-size: 1rem;
+}
+h1{
+  padding-top: 10;
+  color:white;
+}
+h3{
+  color:rgb(255, 251, 0);
+}
+/* Valores para el body*/
+body{
+  background-image: url(https://monterrassa.cat/app/uploads/sites/19/2024/11/plaa_cat_fgc.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  backdrop-filter: blur(4px);
+  height: 100%;
+  zoom: -20%;
+  
+}
+/* CSS para el contenedor general (estaciones, horarios, etc.)*/
+.container{
+  opacity: 95%;
+  min-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  gap: 5px;
+  text-align: center;
+
+}
+/* CSS para los iconos de las lineas*/
+.cX{
+  width: 30%;
+  padding-top: 10px;
+
+}
+/* CSS los contenedores hijos (Estaciones, etc.)*/
+
+.grid{
+  background-color: rgb(78, 78, 78);
+  width: 500px;
+  margin:0 auto;
+  border:0;
+  border-radius: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+/* CSS para la barra de busqueda.*/
+.Searchbar{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.Searchbar input {
+  width: 70%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.Searchbar button {
+  padding: 8px 15px;
+  border: none;
+  background-color: grey;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Searchbar button:hover {
+  background-color: #45a049;
+}
+
+/* CSS para el header*/
+.header{
+  gap: 10px;
+  margin: 0 auto;
+  display: flex; 
+  flex-direction: column; /* Apila los elementos en columna */
+  align-items: center; 
+  width: 100%;
+  max-width: 600px;  /* Asegura que el formulario no sea demasiado ancho */
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 25px;  /* Bordes redondeados */
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+/*Contenedor mayor en la página de trenes en circulacion.*/
+.trenes-container{
+  text-align: center;
+}
+/* CSS para el h1 el cual donde pone el total de trenes:*/
+.total{
+  background-color: #54565A;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
